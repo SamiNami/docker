@@ -1,5 +1,6 @@
 
-docker run "container_name"             creates and runs a container
+docker run "container_name"             creates and runs a container,
+                                        shows the logs of the container
 
 docker ps                               shows all running docker containers
 docker ps -all                          show all docker containers you ever ran
