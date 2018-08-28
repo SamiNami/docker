@@ -6,4 +6,13 @@ docker ps                               shows all running docker containers
 docker ps -all                          show all docker containers you ever ran
 
 docker create "container_name"          creates the container
-docker start -a "id"                    starts the container
+docker start -a "id"                    starts the container, runs what it contains
+
+docker system prune                     deletes all containers and build cache
+docker logs "id"                        shows the logs for the container
+
+docker stop "id"                        gives the container time to shut down
+docker kill "id"                        stops the container with no cleanup
+
+docker exec -it "id" "command"          insert a new command into the container
+                                        example: docker exec -it d07b45287854 redis-cli
