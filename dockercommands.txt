@@ -1,0 +1,8 @@
+
+docker run "container_name"             creates and runs a container
+
+docker ps                               shows all running docker containers
+docker ps -all                          show all docker containers you ever ran
+
+docker create "container_name"          creates the container
+docker start -a "id"                    starts the container
