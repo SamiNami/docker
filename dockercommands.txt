@@ -21,3 +21,6 @@ docker exec -it "id" "command"          insert a new command into the container
 
 docker exec -it "id" sh                 opens the docker container with shell
                                         sh = another command shell / terminal
+
+docker run -it busybox sh               start a new container out of the busybox image
+                                        run the sh program (shell), attach to the stdin channel
