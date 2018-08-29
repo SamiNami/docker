@@ -16,3 +16,8 @@ docker kill "id"                        stops the container with no cleanup
 
 docker exec -it "id" "command"          insert a new command into the container
                                         example: docker exec -it d07b45287854 redis-cli
+                                        -it = -i an -t , -i = direct message to stdin channel
+                                        -t = prettifies the output
+
+docker exec -it "id" sh                 opens the docker container with shell
+                                        sh = another command shell / terminal
