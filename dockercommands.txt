@@ -24,3 +24,5 @@ docker exec -it "id" sh                 opens the docker container with shell
 
 docker run -it busybox sh               start a new container out of the busybox image
                                         run the sh program (shell), attach to the stdin channel
+
+    Creating docker files:
