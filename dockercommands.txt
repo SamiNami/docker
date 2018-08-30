@@ -42,3 +42,5 @@ docker run -p 5000:8080 samiperalahti/simpleweb
 
 docker-compose up                       start up containers
 docker-compose up --build               start up containers, rebuild them
+docker-compose up -d                    start containers run in background
+docker-compose down                     close all containers that are running
