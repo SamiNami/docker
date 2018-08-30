@@ -1,0 +1,10 @@
+version: "3"
+# create these containers
+services:
+    reddis-server:
+        image: 'redis'
+    node-app:
+        # look in the current dir and use that docker file
+        build: .
+        ports:
+            - "4001:8081"
