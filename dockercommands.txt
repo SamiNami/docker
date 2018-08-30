@@ -29,3 +29,8 @@ docker run -it busybox sh               start a new container out of the busybox
 
 docker build .                          take a docker file and generate a image out of it
                                         the . choses all files for the context
+
+docker build -t samiperalahti/redis:latest .
+                                        tag an image with your docker id / name
+
+docker run samiperalahti/redis          run your tagged docker image
