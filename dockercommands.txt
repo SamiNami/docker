@@ -37,3 +37,8 @@ docker run samiperalahti/redis          run your tagged docker image
 
 docker run -p 5000:8080 samiperalahti/simpleweb
                                         setup portmapping for docker
+
+    Docker compose:
+
+docker-compose up                       start up containers
+docker-compose up --build               start up containers, rebuild them
