@@ -4,6 +4,7 @@ services:
     reddis-server:
         image: 'redis'
     node-app:
+        restart: "no"
         # look in the current dir and use that docker file
         build: .
         ports:
