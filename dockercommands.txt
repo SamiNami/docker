@@ -45,3 +45,14 @@ docker-compose up --build               start up containers, rebuild them
 docker-compose up -d                    start containers run in background
 docker-compose down                     close all containers that are running
 docker-compose ps                       prints status for you composed containers
+
+
+docker build -f Dockerfile.dev .        specify the dockerfile that should be used
+    Setting up volumes, automatic builds to the container
+docker run -p 3000:3000 -v /app/node_modules  -v $(pwd):/app 89eb8d913d90
+
+                                        -v =
+                                        if there is no :, use this as a placeholder that is
+                                        already inside the container (or will be generated)
+                                        if there is a :
+                                        you map those files to the path after the :
